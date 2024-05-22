@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes Procesadas con TensorFlow.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+    <h1>Imágenes Procesadas con TensorFlow.js</h1>
+
+    <!-- Entrada para cargar la imagen -->
+    <input type="file" id="imageUpload" accept="image/*" />
+    <br><br>
+
+    <!-- Sección para mostrar la imagen original -->
+    <h2>Imagen Original</h2>
+    <img id="originalImage" alt="Imagen Original" style="max-width: 100%;">
+
+    <!-- Sección para mostrar la imagen recortada -->
+    <h2>Imagen Recortada</h2>
+    <canvas id="croppedCanvas"></canvas>
+
+    <!-- Sección para mostrar la imagen redimensionada usando Vecino Más Cercano -->
+    <h2>Imagen Redimensionada (Vecino Más Cercano)</h2>
+    <canvas id="resizedNearestCanvas"></canvas>
+
+    <!-- Sección para mostrar la imagen redimensionada usando Bilineal -->
+    <h2>Imagen Redimensionada (Bilineal)</h2>
+    <canvas id="resizedBilinearCanvas"></canvas>
+
+    <!-- Sección para mostrar la imagen espejada -->
+    <h2>Imagen Espejada (Mirrored)</h2>
+    <canvas id="flippedCanvas"></canvas>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
